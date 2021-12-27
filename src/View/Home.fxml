@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="658.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+   <children>
+      <HBox layoutX="4.0" prefHeight="658.0" prefWidth="786.0" style="-fx-background-color: #fff;">
+         <children>
+            <AnchorPane prefHeight="548.0" prefWidth="251.0">
+               <children>
+                  <ImageView fitHeight="687.0" fitWidth="458.0" layoutX="-129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/img/HomeBanner.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane accessibleText="butt" prefHeight="400.0" prefWidth="566.0">
+               <children>
+                  <HBox layoutY="37.0" prefHeight="40.0" prefWidth="464.0">
+                     <children>
+                        <JFXButton prefHeight="40.0" prefWidth="87.0" ripplerFill="TRANSPARENT" style="-fx-font-weight: 600; -fx-font-family: Poppins;" text="Home" textAlignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton prefHeight="40.0" prefWidth="171.0" ripplerFill="TRANSPARENT" style="-fx-font-weight: 600; -fx-font-family: Poppins;" text="Material registration" textAlignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton prefHeight="42.0" prefWidth="50.0" ripplerFill="TRANSPARENT" style="-fx-font-weight: 600; -fx-font-family: Poppins;" text="GPA" textAlignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton prefHeight="40.0" prefWidth="106.0" ripplerFill="TRANSPARENT" style="-fx-font-weight: 600; -fx-font-family: Poppins;" text="Show Marks" textAlignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton prefHeight="40.0" prefWidth="50.0" ripplerFill="TRANSPARENT" style="-fx-font-weight: 600; -fx-font-family: Poppins;" text="1fs" textAlignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <Label layoutX="26.0" layoutY="204.0" style="-fx-font-size: 40; -fx-font-weight: 700;" text="Welcome to FCIM" />
+                  <Label layoutX="26.0" layoutY="277.0" text="To contact support, call: +201020964042 or +201096787085" />
+                  <Label layoutX="26.0" layoutY="309.0" text="Visit our website" />
+                  <Hyperlink fx:id="linkToCollegeSite" layoutX="114.0" layoutY="306.0" text="FCIM" />
+                  <HBox layoutX="26.0" layoutY="441.0" prefHeight="58.0" prefWidth="426.0" spacing="40.0">
+                     <children>
+                        <JFXButton prefHeight="56.0" prefWidth="174.0" style="-fx-background-color: #222; -fx-border-radius: 15;" text="Developers" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" prefHeight="56.0" prefWidth="174.0" ripplerFill="#797979" style="-fx-background-color: white; -fx-border-color: #111; -fx-border-radius: 5;" text="Log out">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
