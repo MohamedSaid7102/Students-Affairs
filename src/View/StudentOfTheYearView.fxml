@@ -10,22 +10,22 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="706.0" maxWidth="786.0" prefHeight="658.0" prefWidth="863.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+<AnchorPane maxHeight="706.0" maxWidth="786.0" prefHeight="658.0" prefWidth="752.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
    <children>
-      <HBox layoutX="4.0" prefHeight="658.0" prefWidth="779.0" style="-fx-background-color: #fff;">
+      <HBox layoutX="4.0" prefHeight="658.0" prefWidth="684.0" style="-fx-background-color: #fff;">
          <children>
             <AnchorPane prefHeight="227.0" prefWidth="314.0">
                <children>
-                  <ImageView fitHeight="320.0" fitWidth="315.0" layoutX="-1.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="320.0" fitWidth="315.0" layoutX="-15.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../assets/img/SOTY.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane accessibleText="butt" prefHeight="658.0" prefWidth="482.0">
+            <AnchorPane accessibleText="butt" prefHeight="414.0" prefWidth="35.0">
                <children>
-                  <HBox layoutY="37.0" prefHeight="40.0" prefWidth="464.0">
+                  <HBox layoutY="37.0" prefHeight="40.0" prefWidth="466.0">
                      <children>
                         <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" style="-fx-background-color: transparent;">
                            <graphic>
@@ -89,7 +89,7 @@
                         </HBox>
                      </children>
                   </VBox>
-                  <ImageView fitHeight="127.0" fitWidth="126.0" layoutX="338.0" layoutY="514.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="127.0" fitWidth="126.0" layoutX="338.0" layoutY="531.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../assets/img/dottedSquareEffect.png" />
                      </image>
