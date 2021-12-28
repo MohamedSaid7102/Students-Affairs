@@ -187,5 +187,10 @@
             <JFXCheckBox checkedColor="#497ebc" layoutX="92.0" layoutY="167.0" text=" " />
          </children>
       </AnchorPane>
+      <JFXButton layoutX="237.0" layoutY="589.0" prefHeight="54.0" prefWidth="303.0" style="-fx-background-color: #10749F; -fx-text-fill: #fff; -fx-background-radius: 30; -fx-border-radius: 30;" text="Submit" textFill="WHITE">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>
