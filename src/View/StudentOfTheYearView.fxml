@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="706.0" maxWidth="786.0" prefHeight="658.0" prefWidth="752.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+<AnchorPane maxHeight="706.0" maxWidth="786.0" prefHeight="658.0" prefWidth="752.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StudentOfTheYearController">
    <children>
       <HBox layoutX="4.0" prefHeight="658.0" prefWidth="684.0" style="-fx-background-color: #fff;">
          <children>
@@ -25,66 +25,25 @@
             </AnchorPane>
             <AnchorPane accessibleText="butt" prefHeight="414.0" prefWidth="35.0">
                <children>
-                  <HBox layoutY="37.0" prefHeight="40.0" prefWidth="466.0">
-                     <children>
-                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" style="-fx-background-color: transparent;">
-                           <graphic>
-                              <ImageView fitHeight="34.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: pointer;">
-                                 <image>
-                                    <Image url="@../assets/img/backBtnImg.png" />
-                                 </image>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </ImageView>
-                           </graphic>
-                        </Button>
-                        <JFXButton opacity="0.5" prefHeight="40.0" prefWidth="87.0" ripplerFill="TRANSPARENT" style="-fx-font-weight: 600; -fx-font-family: Poppins;" text="Home" textAlignment="CENTER">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </JFXButton>
-                        <JFXButton opacity="0.5" prefHeight="40.0" prefWidth="171.0" ripplerFill="TRANSPARENT" style="-fx-font-weight: 600; -fx-font-family: Poppins;" text="Material registration" textAlignment="CENTER">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </JFXButton>
-                        <JFXButton opacity="0.5" prefHeight="42.0" prefWidth="50.0" ripplerFill="TRANSPARENT" style="-fx-font-weight: 600; -fx-font-family: Poppins;" text="GPA" textAlignment="CENTER">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </JFXButton>
-                        <JFXButton opacity="0.5" prefHeight="40.0" prefWidth="106.0" ripplerFill="TRANSPARENT" style="-fx-font-weight: 600; -fx-font-family: Poppins;" text="Show Marks" textAlignment="CENTER">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </JFXButton>
-                        <JFXButton prefHeight="40.0" prefWidth="50.0" ripplerFill="TRANSPARENT" style="-fx-font-weight: 600; -fx-font-family: Poppins;" text="1fs" textAlignment="CENTER">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </JFXButton>
-                     </children>
-                  </HBox>
                   <Label layoutX="14.0" layoutY="174.0" style="-fx-font-size: 40; -fx-font-weight: 700;" text="Student of the Year 🎉" />
                   <VBox layoutX="64.0" layoutY="279.0" prefHeight="222.0" prefWidth="358.0" spacing="20.0">
                      <children>
                         <HBox prefHeight="58.0" prefWidth="426.0" spacing="10.0">
                            <children>
                               <Label prefHeight="58.0" prefWidth="94.0" style="-fx-font-size: 23; -fx-font-weight: bold;" text="Name:" />
-                              <Label prefHeight="58.0" prefWidth="234.0" style="-fx-font-size: 25;" text="Mohamed Shelf" />
+                              <Label fx:id="StudentName" prefHeight="58.0" prefWidth="234.0" style="-fx-font-size: 25;" text="Mohamed Shelf" />
                            </children>
                         </HBox>
                         <HBox layoutX="10.0" layoutY="10.0" prefHeight="58.0" prefWidth="426.0" spacing="10.0">
                            <children>
                               <Label prefHeight="58.0" prefWidth="97.0" style="-fx-font-size: 23; -fx-font-weight: bold;" text="GPA:" />
-                              <Label prefHeight="58.0" prefWidth="118.0" style="-fx-font-size: 25;" text="4.0" />
+                              <Label fx:id="StudentGPA" prefHeight="58.0" prefWidth="118.0" style="-fx-font-size: 25;" text="4.0" />
                            </children>
                         </HBox>
                         <HBox layoutX="10.0" layoutY="68.0" prefHeight="58.0" prefWidth="426.0" spacing="10.0">
                            <children>
                               <Label prefHeight="58.0" prefWidth="99.0" style="-fx-font-size: 23; -fx-font-weight: bold;" text="Level:" />
-                              <Label prefHeight="58.0" prefWidth="142.0" style="-fx-font-size: 25;" text="3" />
+                              <Label fx:id="StudentLevel" prefHeight="58.0" prefWidth="142.0" style="-fx-font-size: 25;" text="3" />
                            </children>
                         </HBox>
                      </children>
@@ -94,6 +53,47 @@
                         <Image url="@../assets/img/dottedSquareEffect.png" />
                      </image>
                   </ImageView>
+                  <HBox layoutX="-1.0" layoutY="36.0" prefHeight="40.0" prefWidth="466.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fx:id="BackBtn" fitHeight="34.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: pointer;">
+                                 <image>
+                                    <Image url="@../assets/img/backBtnImg.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <JFXButton fx:id="Home" opacity="0.5" prefHeight="40.0" prefWidth="87.0" ripplerFill="TRANSPARENT" style="-fx-font-weight: 600; -fx-font-family: Poppins;" text="Home" textAlignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="MaterialRegistration" opacity="0.5" prefHeight="40.0" prefWidth="171.0" ripplerFill="TRANSPARENT" style="-fx-font-weight: 600; -fx-font-family: Poppins;" text="Material registration" textAlignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="GPA" opacity="0.5" prefHeight="42.0" prefWidth="50.0" ripplerFill="TRANSPARENT" style="-fx-font-weight: 600; -fx-font-family: Poppins;" text="GPA" textAlignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="ShowMarks" opacity="0.5" prefHeight="40.0" prefWidth="106.0" ripplerFill="TRANSPARENT" style="-fx-font-weight: 600; -fx-font-family: Poppins;" text="Show Marks" textAlignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="SOTY" prefHeight="40.0" prefWidth="50.0" ripplerFill="TRANSPARENT" style="-fx-font-weight: 600; -fx-font-family: Poppins;" text="1fs" textAlignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </HBox>
                </children>
             </AnchorPane>
          </children>

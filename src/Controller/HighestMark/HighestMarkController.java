@@ -1,4 +1,4 @@
-package Controller;
+package Controller.HighestMark;
 
 
 import com.jfoenix.controls.JFXButton;
@@ -6,7 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 
-public class StudentOfTheYearController {
+public class HighestMarkController {
     
     @FXML
     private ImageView BackBtn;
@@ -27,12 +27,12 @@ public class StudentOfTheYearController {
     private JFXButton ShowMarks;
     
     @FXML
-    private Label StudentGPA;
-    
-    @FXML
     private Label StudentLevel;
     
     @FXML
     private Label StudentName;
+    
+    @FXML
+    private Label StudentScore;
     
 }
