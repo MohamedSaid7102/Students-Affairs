@@ -4,18 +4,19 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+//33203-234234-3243-
+
 public class Main extends Application {
     
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("View/SignInView.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("View/StudentOfTheYearView.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(false);
         primaryStage.show();
     }
-
-
+    
     public static void main(String[] args) {
         launch(args);
     }
