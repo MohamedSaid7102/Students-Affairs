@@ -15,7 +15,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="732.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SignInController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="732.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SignInUp.SignInController">
     <children>
         <Label layoutX="323.0" layoutY="14.0" prefHeight="36.0" prefWidth="110.0" text="Sign in">
             <font>
@@ -24,7 +24,7 @@
         </Label>
         <ImageView fitHeight="218.0" fitWidth="390.0" layoutX="378.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../assets/img/SignIn.png" />
+                <Image url="@../../assets/img/SignIn.png" />
             </image>
         </ImageView>
         <Label layoutX="33.0" layoutY="108.0" prefHeight="18.0" prefWidth="133.0" text="Don't have an account?" textFill="#7c7c7c" />
@@ -38,7 +38,7 @@
                 <Font name="System Bold" size="25.0" />
             </font>
         </Label>
-        <Label layoutX="46.0" layoutY="146.0" prefHeight="18.0" prefWidth="88.0" style="-fx-font-weight: 400;" text="User Name">
+        <Label layoutX="46.0" layoutY="146.0" prefHeight="18.0" prefWidth="88.0" style="-fx-font-weight: 400;" text="Email">
             <font>
                 <Font name="System Bold" size="15.0" />
             </font>
@@ -48,7 +48,7 @@
                 <Font name="System Bold" size="15.0" />
             </font>
         </Label>
-        <TextField layoutX="44.0" layoutY="175.0" prefHeight="38.0" prefWidth="338.0" promptText="Enter Your Name" style="-fx-border-color: #a19fec; -fx-background-color: transpare; -fx-border-radius: 20;" />
+        <TextField fx:id="email_tf" layoutX="44.0" layoutY="175.0" prefHeight="38.0" prefWidth="338.0" promptText="Enter Your Name" style="-fx-border-color: #a19fec; -fx-background-color: transpare; -fx-border-radius: 20;" />
         <Line endX="110.39999389648438" endY="-3.0517578125E-5" layoutX="51.0" layoutY="404.0" startX="36.79999542236328" startY="-3.0517578125E-5" stroke="#c8d3f9" style="-fx-fill: #C8D3F9;" />
         <Label layoutX="169.0" layoutY="395.0" prefHeight="18.0" prefWidth="100.0" text="or continue with" />
         <Line endX="166.19998168945312" endY="3.0517578125E-5" layoutX="176.0" layoutY="405.0" startX="86.99996948242188" startY="3.0517578125E-5" stroke="#c8d3f9" style="-fx-fill: #C8D3F9;" />
@@ -63,7 +63,7 @@
                <graphic>
                     <ImageView fitHeight="36.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                            <Image url="@../assets/img/GoogleIcon.png" />
+                            <Image url="@../../assets/img/GoogleIcon.png" />
                         </image>
                     </ImageView>
                </graphic>
@@ -75,7 +75,7 @@
                <graphic>
                     <ImageView fitHeight="40.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                            <Image url="@../assets/img/FacebookIcon.png" />
+                            <Image url="@../../assets/img/FacebookIcon.png" />
                         </image>
                     </ImageView>
                </graphic>
@@ -87,7 +87,7 @@
                <graphic>
                     <ImageView fitHeight="36.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                            <Image url="@../assets/img/AppleIcon.png" />
+                            <Image url="@../../assets/img/AppleIcon.png" />
                         </image>
                     </ImageView>
                </graphic>
@@ -97,8 +97,8 @@
             </Button>
          </children>
       </HBox>
-        <PasswordField layoutX="44.0" layoutY="248.0" prefHeight="36.0" prefWidth="338.0" promptText="Enter Your Password" style="-fx-background-color: transpare; -fx-border-color: #a19fec; -fx-border-radius: 20;" />
-      <JFXButton layoutX="50.0" layoutY="343.0" prefHeight="40.0" prefWidth="338.0" style="-fx-background-color: #6C63FF; -fx-background-radius: 30;" text="Sign in" textFill="WHITE">
+        <PasswordField fx:id="password_tf" layoutX="44.0" layoutY="248.0" prefHeight="36.0" prefWidth="338.0" promptText="Enter Your Password" style="-fx-background-color: transpare; -fx-border-color: #a19fec; -fx-border-radius: 20;" />
+      <JFXButton fx:id="signIn_btn" layoutX="50.0" layoutY="343.0" prefHeight="40.0" prefWidth="338.0" style="-fx-background-color: #6C63FF; -fx-background-radius: 30;" text="Sign in" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font>
@@ -111,7 +111,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="161.0" layoutY="104.0" text="Sign up" textFill="#6a66fa">
+      <JFXButton fx:id="signup" layoutX="161.0" layoutY="104.0" text="Sign up" textFill="#6a66fa">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

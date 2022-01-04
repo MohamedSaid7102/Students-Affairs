@@ -103,7 +103,7 @@ modules.xml
 
 # Log file
 *.log
-
+TODO.txt
 # BlueJ files
 *.ctxt
 
